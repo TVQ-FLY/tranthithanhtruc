@@ -16,29 +16,29 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Hiển thị prompt yêu cầu mật khẩu
-  const password = "03052006"; // Thay "yourpassword" bằng mật khẩu của bạn
-  const attemptsLimit = 3; // Số lần thử tối đa
-  let attempts = 0;
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Hiển thị prompt yêu cầu mật khẩu
+//   const password = "03052006"; // Thay "yourpassword" bằng mật khẩu của bạn
+//   const attemptsLimit = 3; // Số lần thử tối đa
+//   let attempts = 0;
 
-  while (attempts < attemptsLimit) {
-    const userInput = prompt("Vui lòng nhập mật khẩu để truy cập: ");
-    if (userInput === password) {
-      alert("Trần Văn Quyền chào mừng bạn đã truy cập !");
-      break;
-    } else {
-      attempts++;
-      alert("Mật khẩu không đúng! Vui lòng thử lại.");
-    }
+//   while (attempts < attemptsLimit) {
+//     const userInput = prompt("Vui lòng nhập mật khẩu để truy cập: ");
+//     if (userInput === password) {
+//       alert("Trần Văn Quyền chào mừng bạn đã truy cập !");
+//       break;
+//     } else {
+//       attempts++;
+//       alert("Mật khẩu không đúng! Vui lòng thử lại.");
+//     }
 
-    if (attempts === attemptsLimit) {
-      alert("Bạn đã nhập sai quá nhiều lần. Truy cập bị từ chối!");
-      // Đóng hoặc chuyển hướng người dùng
-      window.location.href = "https://google.com"; // Thay đổi URL nếu cần
-    }
-  }
-});
+//     if (attempts === attemptsLimit) {
+//       alert("Bạn đã nhập sai quá nhiều lần. Truy cập bị từ chối!");
+//       // Đóng hoặc chuyển hướng người dùng
+//       window.location.href = "https://google.com"; // Thay đổi URL nếu cần
+//     }
+//   }
+// });
 
 // Back top
 let backToTopBtn = document.getElementById("backToTopBtn");
